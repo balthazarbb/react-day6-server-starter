@@ -19,7 +19,7 @@ require('./config')(app);
 //---------------------------------------------------------
 // Set up connect-mongo
 const session = require('express-session');
-const MongoStore = require('connect-mongo').default;
+const MongoStore = require('connect-mongo');
 
 app.use(session({
     secret: 'NotMyAge',
